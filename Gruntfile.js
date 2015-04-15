@@ -420,8 +420,16 @@ module.exports = function (grunt) {
         singleRun: true
       }
     }
-  });
 
+    // protractor: {
+    //   options: {
+    //     keepAlive: true,
+    //     configFile: "protractor.conf.js"
+    //   },
+    // run: {}
+    // };
+
+  });
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -449,7 +457,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'karma'
+    'karma',
+    'protractor:run'
   ]);
 
   grunt.registerTask('build', [

@@ -1,6 +1,12 @@
 
 <h2>FlickR Public Feed</h2>
 
-  <ul ng-repeat="photo in photos">
-    <li>{{photo}}</li>
-  </ul>
+<div ng-repeat="photo in photos">
+  <img src="{{photo.media.m}}">
+  <h3>{{photo.title}}</h3>
+  <p>
+    <a href="#">{{photo.author}}</a>
+    Published at: {{photo.published}}
+    <a href="{{photo.link}}">View on Flickr</a>
+  </p>
+</div>

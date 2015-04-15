@@ -15,8 +15,13 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngResource'
   ])
+  .config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  }])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -24,8 +29,8 @@ angular
         controller: 'MainController'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutController'
+        templateUrl: 'views/detail.html',
+        controller: 'DetailController'
       })
       .otherwise({
         redirectTo: '/'
