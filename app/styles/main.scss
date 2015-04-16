@@ -14,78 +14,65 @@ body {
   padding: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
+.header {
   padding-left: 15px;
   padding-right: 15px;
+  background-color: #D64541;
+  margin-bottom: 30px;
+  padding: 1em;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+.header h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-left: 10em;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.container h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+.container p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+.col-md-4,
+.col-md-8 {
+  height: 15em;
+  border: 1px solid black;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
+img.photo {
+  display: block;
+  max-width: 15em;
+  max-height: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0.5em;
 }
 
-/* Responsive: Portrait tablets and up */
+.photo-caption {
+  margin: 2em;
+}
+
+.photo-caption h3 {
+  line-height: 3em;
+}
+
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
-  /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
   }
-  /* Space out the masthead */
+
   .header {
     margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }

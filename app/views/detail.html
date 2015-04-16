@@ -1,1 +1,16 @@
-<h2>DETAILED PHOTO VIEW</h2>
+<!-- <div class="details" ng-model="photos"> -->
+  <h2>DETAILED PHOTO VIEW</h2>
+  <!-- Back button should link back to list view -->
+  <button><a href="/#/">back</a></button>
+  <!-- Photo title should go to link on Flickr -->
+  <h3>{{whichPhoto.title}}</h3>
+  <!-- Photo author should go to author's profile on Flickr -->
+  <h5>{{whichPhoto.author}} | {{whichPhoto.published}}</h5>
+  <img ng-src="{{whichPhoto.media.m}}"/>
+  <p>{{photoDescription}}</p>
+
+
+  <!-- Iterate over tags in photos -->
+
+    <p>{{whichPhoto.tags}}</p>
+</div>

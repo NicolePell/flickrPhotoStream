@@ -1,12 +1,22 @@
 
-<h2>FlickR Public Feed</h2>
 
 <div ng-repeat="photo in photos">
-  <img src="{{photo.media.m}}">
-  <h3>{{photo.title}}</h3>
-  <p>
-    <a href="#">{{photo.author}}</a>
-    Published at: {{photo.published}}
-    <a href="{{photo.link}}">View on Flickr</a>
-  </p>
+  <!-- Photo image should link to photo detail page in web app -->
+<div class="row">
+  <div class="col-md-4">
+    <img class="photo" ng-src="{{photo.media.m}}">
+  </div>
+  <!-- Photo title should link to photo detail page in web app -->
+  <div class="col-md-8">
+    <div class="photo-caption">
+      <h3><a href="#/photo/{{photos.indexOf(photo)}}">{{photo.title}}</a></h3>
+      <p>
+    <!-- Author name should link to authors profile on Flickr -->
+        <a href="#">{{photo.author}}</a>
+        Published at: {{photo.published | date: 'dd MMM yyyy' : 'h:mm'}}
+    <!-- View on Flickr link should go to post on Flickr -->
+        <a href="{{photo.link}}">View on Flickr</a>
+      </p>
+    </div>
+  </div>
 </div>

@@ -28,7 +28,7 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainController'
       })
-      .when('/about', {
+      .when('/photo/:photoID', {
         templateUrl: 'views/detail.html',
         controller: 'DetailController'
       })
