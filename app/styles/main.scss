@@ -16,41 +16,25 @@ body {
 
 // ================HEADER================
 
-.header {
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #D64541;
-  margin-bottom: 30px;
-  padding: 1em;
-  height: 5em;
+.navbar {
+  background-color: #446CB3;
 }
 
-h1 {
-  color: white;
-}
-
-h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-
-.header h1 {
+.navbar-default .navbar-brand {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  margin-top: 0;
-  margin-left: 5em;
+  font-size: 30px;
+  color: white;
 }
 
-.search {
-  color: white;
-  display: inline-block;
-  padding: 1em;
+.navbar-form {
+  padding-top: 1em;
 }
 
 // ================MAIN CONTENT================
 
 .container {
-  width: 850px;
+  width: 80%;
 }
 
 .container h3 {
@@ -63,23 +47,17 @@ h4 {
   font-weight: 300;
 }
 
-.dialog-window {
-  height: 40em;
-  border: 1px solid black;
-}
-
 .scrollable-content {
-  height: 40em;
+  max-height: 430px;
   overflow: auto;
 }
 
 .detail-window {
-  height: 26em;
-  border: 1px solid black;
+  height: 70%;
 }
 
 .detail-scrollable {
-  height: 24em;
+  height: 60%;
   overflow: auto;
   position: relative;
 }
@@ -87,7 +65,11 @@ h4 {
 .col-md-4,
 .col-md-8 {
   height: 15em;
-  border: 1px solid black;
+}
+
+.row:nth-child(odd) {
+  background: lightblue;
+  border: 1px solid #446CB3;
 }
 
 // ================PHOTO================
@@ -146,7 +128,7 @@ img.photo {
 #buttonboxback {
     width: 70px;
     height: 33px;
-    background-color: #D64541;
+    background-color: #446CB3;
     position: relative;
     margin-left: 40px;
     border-radius: 5px;
@@ -160,7 +142,7 @@ img.photo {
     left: -17px;
     border-style: solid;
     border-width: 17px 20px 16px 0;
-    border-color: transparent #D64541 transparent transparent;
+    border-color: transparent #446CB3 transparent transparent;
 }
 
 #buttonboxback > a {

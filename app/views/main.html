@@ -1,25 +1,25 @@
 
 <div class="dialog-window">
   <div class="scrollable-content">
-    <div ng-repeat="photo in photos | filter:query">
-      <div class="row">
-        <div class="col-md-4">
-          <a href="#/photo/{{photos.indexOf(photo)}}">
-            <img class="photo" ng-src="{{photo.media.m}}"/>
-          </a>
-        </div>
+    <div class="row" ng-repeat="photo in photos | filter:query">
 
-        <div class="col-md-8">
-          <div class="photo-caption">
-            <h3 class="truncate"><a href="#/photo/{{photos.indexOf(photo)}}">{{photo.title}}</a></h3>
-            <p>
+      <div class="col-md-4">
+        <a href="#/photo/{{photos.indexOf(photo)}}">
+          <img class="photo" ng-src="{{photo.media.m}}"/>
+        </a>
+      </div>
+
+      <div class="col-md-8">
+        <div class="photo-caption">
+          <h3 class="truncate"><a href="#/photo/{{photos.indexOf(photo)}}">{{photo.title}}</a></h3>
+          <p>
         <!-- Author name should link to authors profile on Flickr -->
-              <a href="#">{{photo.author}}</a>
-              Published at: {{photo.published | date: 'dd MMM yyyy' : 'h:mm'}}
-              <a href="{{photo.link}}">View on Flickr</a>
-            </p>
-          </div>
+            <a href="#">{{photo.author}}</a>
+            Published at: {{photo.published | date: 'dd MMM yyyy' : 'h:mm'}}
+            <a href="{{photo.link}}">View on Flickr</a>
+          </p>
         </div>
+      </div>
 
     </div>
   </div>
