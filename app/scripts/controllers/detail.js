@@ -18,10 +18,7 @@ angular.module('flickrStreamAngularApp')
         $scope.whichPhoto = $scope.photos[$routeParams.photoID];
         var description = (parser.parseFromString($scope.whichPhoto.description, "text/html"));
         $scope.photoDescription = description.getElementsByTagName("p")[2].innerHTML;
-        console.log($scope.whichPhoto);
-        console.log($scope.whichPhoto.description);
-        console.log($scope.photoDescription);
-        console.log($scope.whichPhoto.tags);
+        console.log(description);
       });
 
 
