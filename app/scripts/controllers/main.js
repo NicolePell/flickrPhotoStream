@@ -22,3 +22,6 @@ angular.module('flickrStreamAngularApp')
       });
 
   });
+
+  // var description = (parser.parseFromString($scope.whichPhoto.description, "text/html"));
+  // $scope.photoDescription = description.getElementsByTagName("p")[2].innerHTML;
