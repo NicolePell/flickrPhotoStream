@@ -13,10 +13,10 @@ Run `grunt` for building and `grunt serve` for preview.
 Running `grunt test` will run the unit tests with karma.
 
 ## Features of the website include:
-- [ ] View a list of photos from the Flickr api feed
-- [ ] View photo details
-- [ ] Layout matches wireframes given
-- [ ] Search photos using free-text search box
+- [x] View a list of photos from the Flickr api feed
+- [x] View photo details
+- [x] Layout matches wireframes given
+- [x] Search photos using free-text search box
 
 ## Technologies
 Testing:
