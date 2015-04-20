@@ -8,10 +8,6 @@ A responsive web app which pulls through posts from Flickr tagged with the keywo
 
 Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
-
 ## Features of the website include:
 - [x] View a list of photos from the Flickr api feed
 - [x] View photo details
@@ -19,10 +15,6 @@ Running `grunt test` will run the unit tests with karma.
 - [x] Search photos using free-text search box
 
 ## Technologies
-Testing:
-- Karma for unit tests
-- Protractor for end to end tests
-
 Created with:
 - AngularJS scaffolded using Yeoman
 - HTML & SCSS
@@ -42,6 +34,7 @@ Created with:
 ```
 
 ## Things to improve
+- [ ] Get Karma and Protractor tests working!
 - [ ] Ability to click through to author profile on Flickr
 - [ ] Improve display of description on photo details view
 - [ ] Refactor api call into services
