@@ -2,8 +2,6 @@
 
 A responsive web app which pulls through posts from Flickr tagged with the keyword "potato".
 
-![Screenshot of the app]()
-
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
